@@ -1,24 +1,34 @@
-div.bloc1 {
-	background-color: blue;
-	height: 200px
-	width: 200px;
-	float: left;
-	margin: 10px
-}
-div.bloc2 {
-	background-color: green;
-	height: 200px
-	width: 150px;
-	float: left;
-	margin-left: 20px;
-	margin: 10px;
+body {
+background-color: #33FFB2;
 }
 
-div.bloc3 {
-	background-color: red;
-	height: 180px;
-	width: 200px;
-	margin-left: 20px;
-	margin: 10px;
-	clear: both;
+h1, h2, h3 {
+color: black;
+text-align: center;
+font-family: Arial black;
+}
+
+p{
+color: black;
+}
+
+div {
+border: 4px solid black;
+width: 75%
+margin-left : auto;
+margin-right: auto;
+margin-bottom: 5%;
+padding: 3%
+}
+
+.d1 {
+background-color: #FF3333;
+}
+
+.d2 {
+background-color: #33FFB2;
+}
+
+.d3 {
+background-color: #33FFB2;
 }
