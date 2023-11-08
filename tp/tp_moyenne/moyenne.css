@@ -1,0 +1,16 @@
+h1 {
+    text-align: center;
+    color: White;
+    font-family: grey;
+    font-size: 2em;
+}
+input {
+    display: table-cell;
+    width: 30%;
+    height: 50px;
+    border-radius: 30px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid black;
+
+}
