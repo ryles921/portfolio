@@ -1,0 +1,214 @@
+</head>
+<link rel="stylesheet" type="text/css" href="style1.css">
+<body>
+    <h1>Questionnaire QCM</h1>
+   
+    <form id="qcmForm">
+       <center>
+        <fieldset>
+            <legend>Question 1 :</legend>
+            <p> Qui est le fondateur de Microsoft ?</p>
+            <label>
+                <input type="checkbox" name="q1" value="Bill Gates" checked> Bill Gates
+            </label>
+            <label>
+                <input type="checkbox" name="q1" value="Jeff Bezos" disabled> Jeff Bezos
+            </label>
+            <label>
+                <input type="checkbox" name="q1" value="Mark Zuckerberg" disabled> Mark Zuckerberg
+            </label>
+        </fieldset>
+       
+       
+        <fieldset>
+            <legend>Question 2 :</legend>
+            <p> Qui a déclencher la Seconde Guerre mondiale ?</p>
+            <label>
+                <input type="checkbox" name="q2" value="Joseph Staline" disabled> Joseph Staline
+            </label>
+            <label>
+                <input type="checkbox" name="q2" value="Adolp Hitler" checked> Adolf Hitler
+            </label>
+            <label>
+                <input type="checkbox" name="q2" value="Vladimir Ilitch Lénine" disabled> Vladimir Ilitch Lénine
+            </label>
+        </fieldset>
+       
+       
+        <fieldset>
+            <legend>Question 3 :</legend>
+            <p> En physique, quel est élement qui pemrmet de réspirer ?</p>
+            <label>
+                <input type="checkbox" name="q3" value="Le dioxygène" checked> Le dioxygène
+            </label>
+            <label>
+                <input type="checkbox" name="q3" value="Le d'hydrogène" disabled> Le d'hydrogène
+            </label>
+            <label>
+                <input type="checkbox" name="q3" value="L'oxygène" disabled> L'oxygène
+            </label>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Question 4 :</legend>
+            <p> Qui est le président du yémen ?</p>
+            <label>
+                <input type="checkbox" name="q4" value="Rashad al-Alimi" checked> Rashad al-Alimi
+            </label>
+            <label>
+                <input type="checkbox" name="q4" value="Mohammed ben Salmane" disabled> Mohammed ben Salmane
+            </label>
+            <label>
+                <input type="checkbox" name="q4" value="Ashraf Ghani" disabled> Ashraf Ghani
+            </label>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Question 5 :</legend>
+            <p> Quel est la capital de la Turquie ?</p>
+            <label>
+                <input type="checkbox" name="q5" value="Istanbul" disabled> Istanbul
+            </label>
+            <label>
+                <input type="checkbox" name="q5" value="Antalya" disabled> Antalya
+            </label>
+            <label>
+                <input type="checkbox" name="q5" value="Ankara" checked> Ankara
+            </label>
+        </fieldset>
+       
+
+        <fieldset>
+            <legend>Question 6 :</legend>
+            <p> Quel est le cerveau d'un système informatique ?</p>
+            <label>
+                <input type="checkbox" name="q6" value="Le CPU" checked> Le CPU
+            </label>
+            <label>
+                <input type="checkbox" name="q6" value="Le modem" disabled> Le modem
+            </label>
+            <label>
+                <input type="checkbox" name="q6" value="La carte graphique" disabled> La carte graphique
+            </label>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Question 7 :</legend>
+            <p> Quel est le manga le + vendue ?</p>
+            <label>
+                <input type="checkbox" name="q7" value="DBZ" disabled> DBZ
+            </label>
+            <label>
+                <input type="checkbox" name="q7" value="One piece" checked> One piece
+            </label>
+            <label>
+                <input type="checkbox" name="q7" value="Naruto" disabled> Naruto
+            </label>
+        </fieldset>
+       
+
+        <fieldset>
+            <legend>Question 8 :</legend>
+            <p>Qui a découvert la gravité en premier ? ?</p>
+            <label>
+                <input type="checkbox" name="q8" value="Issac Newton" checked> Issac Newton
+            </label>
+            <label>
+                <input type="checkbox" name="q8" value="Albert Einstein" disabled> Albert Einstein
+            </label>
+            <label>
+                <input type="checkbox" name="q8" value="Marie Curie" disabled> Marie Curie
+            </label>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Question 9 :</legend>
+            <p>Quel est la taille moyenne d'un homme en france ?</p>
+            <label>
+                <input type="checkbox" name="q9" value="1.77cm" checked> 1.77cm
+            </label>
+            <label>
+                <input type="checkbox" name="q9" value="1.76cm" checked> 1.76cm
+            </label>
+            <label>
+                <input type="checkbox" name="q9" value="1.70" disabled> 1.70cm
+            </label>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Question 10 :</legend>
+            <p>Quel est l'animal le plus rapide du monde ?</p>
+            <label>
+                <input type="checkbox" name="q10" value="Le guépard" checked> Le guépard
+            </label>
+            <label>
+                <input type="checkbox" name="q10" value="L'espadon-voilier" disabled> L'espadon-voilier
+            </label>
+            <label>
+                <input type="checkbox" name="q10" value="Le léopard" disabled=""> Le Léopard
+            </label>
+        </fieldset>
+
+</center>
+
+       
+    </form>
+
+ 
+    <div id="resultat"></div>
+
+    <script>
+       
+        function corrigerQCM() {
+            const formulaire = document.getElementById("qcmForm");
+            const resultat = document.getElementById("resultat");
+            let score = 0;
+
+         
+            if (formulaire.q1.value === "Bill Gates") {
+                score++;
+            }
+            if (formulaire.q2.value === "Adolf Hitler") {
+                score++;
+            }
+            if (formulaire.q3.value === "Le dioxygène") {
+                score++;
+            }
+            if (formulaire.q4.value === "Rashad al-Alimi") {
+                score++;
+            }
+            if (formulaire.q5.value === "Ankara") {
+                score++;
+            }
+             if (formulaire.q6.value === "Le CPU") {
+                score++;
+            }
+        
+            if (formulaire.q7.value === "One piece") {
+                score++;
+            
+            }
+            if (formulaire.q8.value === "Issac Newton") {
+                score++;
+            }
+            if (formulaire.q9.value === "1.76cm" "1.77cm") {
+                score++;
+            }
+            if (formulaire.q10.value === "Le guépard") {
+                score++;
+            }
+            
+            
+           
+            resultat.innerHTML = `Votre score : ${score} / 10`;
+        }
+    </script>
+
+    
+    </body>
+    </html>

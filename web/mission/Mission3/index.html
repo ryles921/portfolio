@@ -1,0 +1,234 @@
+<html lang="fr">
+<link rel="stylesheet" type="text/css" href="style1.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Questionnaire QCM</title>
+</head>
+<body>
+  <marquee scrollamount="30">
+    <h1>Questionnaire QCM</h1>
+ </marquee>  
+    <form id="qcmForm">
+       <center>
+        <fieldset>
+            <legend>Question 1 :</legend>
+            <p> Qui est le fondateur de Microsoft ?</p>
+            <label>
+                <input type="radio" name="q1" value="Bill Gates" > Bill Gates
+            </label>
+            <label>
+                <input type="radio" name="q1" value="Jeff Bezos" > Jeff Bezos
+            </label>
+            <label>
+                <input type="radio" name="q1" value="Mark Zuckerberg" > Mark Zuckerberg
+            </label>
+        </fieldset>
+       
+       
+        <fieldset>
+            <legend>Question 2 :</legend>
+            <p> Qui a déclencher la Seconde Guerre mondiale ?</p>
+            <label>
+                <input type="radio" name="q2" value="Joseph Staline" > Joseph Staline
+            </label>
+            <label>
+                <input type="radio" name="q2" value="Adolp Hitler" > Adolf Hitler
+            </label>
+            <label>
+                <input type="radio" name="q2" value="Vladimir Ilitch Lénine" > Vladimir Ilitch Lénine
+            </label>
+        </fieldset>
+       
+       
+        <fieldset>
+            <legend>Question 3 :</legend>
+            <p> En physique, quel est élement qui pemrmet de réspirer ?</p>
+            <label>
+                <input type="radio" name="q3" value="Le dioxygène" > Le dioxygène
+            </label>
+            <label>
+                <input type="radio" name="q3" value="Le d'hydrogène" > Le d'hydrogène
+            </label>
+            <label>
+                <input type="radio" name="q3" value="L'oxygène" > L'oxygène
+            </label>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Question 4 :</legend>
+            <p> Qui est le président du yémen ?</p>
+            <label>
+                <input type="radio" name="q4" value="Rashad al-Alimi" > Rashad al-Alimi
+            </label>
+            <label>
+                <input type="radio" name="q4" value="Mohammed ben Salmane" > Mohammed ben Salmane
+            </label>
+            <label>
+                <input type="radio" name="q4" value="Ashraf Ghani" > Ashraf Ghani
+            </label>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Question 5 :</legend>
+            <p> Quel est la capital de la Turquie ?</p>
+            <label>
+                <input type="radio" name="q5" value="Istanbul" > Istanbul
+            </label>
+            <label>
+                <input type="radio" name="q5" value="Antalya" > Antalya
+            </label>
+            <label>
+                <input type="radio" name="q5" value="Ankara" > Ankara
+            </label>
+        </fieldset>
+       
+
+        <fieldset>
+            <legend>Question 6 :</legend>
+            <p> Quel est le cerveau d'un système informatique ?</p>
+            <label>
+                <input type="radio" name="q6" value="Le CPU" > Le CPU
+            </label>
+            <label>
+                <input type="radio" name="q6" value="Le modem" > Le modem
+            </label>
+            <label>
+                <input type="radio" name="q6" value="La carte graphique" > La carte graphique
+            </label>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Question 7 :</legend>
+            <p> Quel est le manga le + vendue ?</p>
+            <label>
+                <input type="radio" name="q7" value="DBZ" > DBZ
+            </label>
+            <label>
+                <input type="radio" name="q7" value="One piece" > One piece
+            </label>
+            <label>
+                <input type="radio" name="q7" value="Naruto" > Naruto
+            </label>
+        </fieldset>
+       
+
+        <fieldset>
+            <legend>Question 8 :</legend>
+            <p>Qui a découvert la gravité en premier ? ?</p>
+            <label>
+                <input type="radio" name="q8" value="Issac Newton" > Issac Newton
+            </label>
+            <label>
+                <input type="radio" name="q8" value="Albert Einstein" > Albert Einstein
+            </label>
+            <label>
+                <input type="radio" name="q8" value="Marie Curie" > Marie Curie
+            </label>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Question 9 :</legend>
+            <p>Quel est la taille moyenne d'un homme en france ?</p>
+            <label>
+                <input type="checkbox" name="q9" value="1.77" > 1.77cm
+            </label>
+            <label>
+                <input type="checkbox" name="q9" value="1.76cm" > 1.76cm
+            </label>
+            <label>
+                <input type="checkbox" name="q9" value="1.70" > 1.70cm
+            </label>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Question 10 :</legend>
+            <p>Quel est l'animal le plus rapide du monde ?</p>
+            <label>
+                <input type="radio" name="q10" value="Le guépard" > Le guépard
+            </label>
+            <label>
+                <input type="radio" name="q10" value="L'espadon-voilier" > L'espadon-voilier
+            </label>
+            <label>
+                <input type="radio" name="q10" value="Le léopard" > Le Léopard
+            </label>
+        </fieldset>
+
+
+
+    
+        <div>
+            <button type="reset">Effacer les sélections</button>
+            <button type="button" onclick="corrigerQCM()">Résultat</button>
+            <button name="corrigev2" type="button" onclick="correctionQCM()">Correction du QCM</button>
+        </div>
+
+ 
+
+    <div id="resultat"></div>
+
+    <script>
+    function correctionQCM() {
+        window.location.href = "correction.html";
+    }
+    </script>
+
+
+    <script>
+       
+        function corrigerQCM() {
+            const formulaire = document.getElementById("qcmForm");
+            const resultat = document.getElementById("resultat");
+            let score = 0;
+
+
+         
+            if (formulaire.q1.value === "Bill Gates") {
+                score++;
+            }
+            if (formulaire.q2.value === "Adolf Hitler") {
+                score++;
+            }
+            if (formulaire.q3.value === "Le dioxygène") {
+                score++;
+            }
+            if (formulaire.q4.value === "Rashad al-Alimi") {
+                score++;
+            }
+            if (formulaire.q5.value === "Ankara") {
+                score++;
+            }
+             if (formulaire.q6.value === "Le CPU") {
+                score++;
+            }
+        
+            if (formulaire.q7.value === "One piece") {
+                score++;
+            
+            }
+            if (formulaire.q8.value === "Issac Newton") {
+                score++;
+            }
+            if (formulaire.q9.value === "1.76cm") {
+                score++;
+            }
+            if (formulaire.q10.value === "Le guépard") {
+                score++;
+            
+            }
+            
+           resultat.innerHTML = `Votre score : ${score} / 10`;
+        }
+        </script>
+</body>
+</html>
+            
+  </center>
+  
