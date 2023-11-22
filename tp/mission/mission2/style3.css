@@ -1,0 +1,22 @@
+h1
+{
+color: rgb(139, 0, 0);
+text-align: center;
+font-family: monospace;
+
+}
+p
+{
+color:rgb #A233FF;
+font-family: monospace;
+border: solid;
+margin-left: 5%
+margin-right:5%
+margin-bottom:5%;
+padding:2%
+font-size:60rem;
+}
+a
+{
+	color: black 
+}
