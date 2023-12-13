@@ -1,0 +1,267 @@
+body{
+  padding: 0;
+  margin: 0;
+
+  font-family: Verdana, Calibri, sans-serif;
+
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center bottom;
+  background-image: url(cyber.gif);
+  background-size: 100%;
+
+}
+
+nav{
+  width: 100%;
+  background-color:#042d49;
+}
+
+.menu-mobile{
+  display: none;
+}
+
+nav input[type=checkbox]{
+  display: none;
+}
+
+nav > ul{
+  padding: 0;
+  margin: 0;
+}
+
+nav > ul::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav > ul > li{
+  float: left;
+  position: relative;
+}
+
+nav li{
+  list-style-type: none;
+}
+
+.submenu{
+  background-color: yellow;
+}
+
+.submenu{
+  background-color: rgb(000, 160, 240);
+}
+
+.submenu{
+  background-color: rgb(251, 216, 99);
+}
+
+.submenu{
+  background-color: rgb(125, 190, 125);
+}
+.submenu{
+  background-color: rgb(125, 190, 185);
+}
+
+.submenu{
+  background-color: rgb(164, 125, 190);
+}
+
+.submenu{
+  display: none;
+}
+
+.submenu li{
+  border-bottom: 1px solid #ccc;
+}
+
+.submenu li a{
+  padding: 15px 30px;
+  font-size: 13px;
+  color: #222538;
+  width: 270px;
+}
+
+nav a{
+  display: inline-block;
+  text-decoration: none;
+}
+
+nav > ul > li > a{
+  padding: 20px 30px;
+  color: #fff;
+}
+
+.menu-1:hover{
+  border-top: 5px solid #e44d26;
+  background-color: rgba(228, 77, 38, 0.15);
+}
+
+.menu-1 .submenu li:hover{
+  background-color: rgba(210, 77, 60);
+}
+
+.menu-2:hover{
+  border-top: 5px solid #0070bb;
+  background-color: rgba(000, 112, 192, 0.15);
+}
+
+.menu-2 .submenu li:hover{
+  background-color: rgba(000, 115, 200);
+}
+
+.menu-3:hover{
+  border-top: 5px solid #f1dc4f;
+  background-color: rgba(241, 211, 79, 0.15);
+}
+
+.menu-3 .submenu li:hover{
+  background-color: rgba(200, 165, 75);
+}
+
+.menu-4:hover{
+  border-top: 5px solid #3eb172;
+  background-color: rgba(19, 109, 23, 0.15);
+}
+
+.menu-4 .submenu li:hover{
+  background-color: rgb(89, 160, 22);
+}
+
+.menu-5:hover{
+  border-top: 5px solid #3eb1a2;
+  background-color: rgba(19, 109, 86, 0.15);
+}
+
+.menu-5 .submenu li:hover{
+  background-color: rgb(94, 143, 139);
+}
+
+.menu-6:hover{
+  border-top: 5px solid #7d3eb1;
+  background-color: rgba(88, 19, 109, 0.15);
+}
+
+.menu-6 .submenu li:hover{
+  background-color: rgb(143, 94, 141);
+}
+
+nav > ul > li:hover a{
+  padding: 15px 30px 20px 30px;
+}
+
+nav li:hover .submenu{
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  padding: 0px;
+  z-index: 100000;
+}
+
+.submenu li:hover a{
+  color: #eee;
+  font-weight: bold;
+}
+
+/* responsive */
+
+nav input[type=checkbox]:checked ~ ul{
+  display: block;
+}
+
+@media screen and (max-width: 680px){
+  .menu-mobile{
+    display: block;
+    color: #fff;
+    background-color: rgba(29, 197, 151, 0.97);
+    text-align: center;
+    padding: 12px 0;
+  }
+  nav ul{
+    display: none;
+  }
+
+
+  nav ul li, nav ul li a{
+    width: 100%;
+    text-align: center;
+  }
+  nav ul li a, nav ul li:hover a{
+    padding: 10px 0px 10px 0px;
+  }
+  nav li:hover .submenu{
+    display: block;
+    position: static;
+  }
+}
+
+/* */
+
+.recherche{
+
+  display: flex;
+
+  margin: 50px auto;
+
+  height: 70px;
+  width: 600px;
+
+}
+
+#rechercher, .recherche button{
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+#rechercher{
+
+  margin: 0;
+  padding: 10px 30px;
+
+  height: 100%;
+  width: 500px;
+
+  border-left: 1px solid lightgray;
+  border-right: 0;
+
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+
+  transition: background-color 0.2s ease;
+
+}
+
+#rechercher:focus{
+  background-color: rgb(243, 243, 243);
+  outline: none;
+}
+
+.recherche button{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+  width: 100px;
+
+  border-right: 1px solid lightgray;
+  border-left: 0;
+
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+
+  background-color: rgb(231, 231, 231);
+
+  transition: background-color 0.3s ease;
+}
+
+.recherche button:hover{
+  background-color: rgb(204, 204, 204);
+}
+
+.recherche img{
+  height: 20px;
+}
